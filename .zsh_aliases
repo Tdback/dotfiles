@@ -1,0 +1,36 @@
+# Aliases sourced in ~/.zshrc
+
+# Terminal
+# File creation, destruction, etc
+alias cp='cp -iv'
+alias rm='rm -Idv'
+alias mv='mv -iv'
+alias mkdir='mkdir -v'
+alias rmdir='rmdir -v'
+
+# Listings
+alias ll='ls -alF'
+alias l1='ls -1F'
+alias la='ls -AF'
+alias l='ls -CF'
+
+# Directory traversal
+alias bd='cd "$OLDPWD"'
+
+# Print where I `really' am
+alias pwd='pwd -P'
+
+# Abusing my CPU
+alias zip='zip -9v'
+alias gzip='gzip -9v'
+alias bzip2='bzip2 -9v'
+alias xz='xz -v'
+
+# Python aliases
+alias python='/usr/bin/python3'
+alias ipy='$HOME/.local/bin/ipython'
+
+# Set neovim as default
+alias v='/usr/bin/nvim'
+alias vi='/usr/bin/nvim'
+alias vim='/usr/bin/nvim'
