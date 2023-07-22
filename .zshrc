@@ -1,5 +1,6 @@
 # Tdback's zshrc
 
+export BROWSER="firefox"
 export LESSHISTFILE="-"
 HISTCONTROL=ignoreboth
 HISTFILE=~/.zsh_history

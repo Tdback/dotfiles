@@ -63,3 +63,9 @@ weather () {
 
   curl -s "https://wttr.in/$city" | head -n -2
 }
+
+# Look for books fast
+textbook () {
+  textbook=$(echo $1 | sed 's/ /+/g')
+  $BROWSER "https://libgen.rs/search.php?req=$textbook"
+}
