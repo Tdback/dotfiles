@@ -22,6 +22,10 @@ super + b
 super + m
         telegram-desktop
 
+# Image editing
+super + g
+        gimp
+
 # Screenshots
 super + p
         flameshot full -p $HOME/.local/screenshots
