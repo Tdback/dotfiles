@@ -41,6 +41,7 @@ pkgs () { pacman -Q | wc -l | xargs -I{} echo "Packages installed: {}" ;}
 ngo () {
   mkdir -p $1 && cd $1
   cp ~/Documents/LICENSE . 
+  touch README.org
   go mod init $1 
 
   cat >./$2.go << EOL
