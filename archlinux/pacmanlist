@@ -59,6 +59,7 @@ containers-common
 coreutils
 cowsay
 cpio
+cppdap
 criu
 crun
 cryptsetup
@@ -121,6 +122,8 @@ gawk
 gc
 gcc
 gcc-libs
+gcr
+gcr-4
 gd
 gdbm
 gdk-pixbuf2
@@ -141,6 +144,7 @@ glibmm-2.68
 glslang
 glu
 gmp
+gnome-keyring
 gnu-free-fonts
 gnupg
 gnutls
@@ -201,9 +205,12 @@ iso-codes
 jack2
 jansson
 jasper
+java-runtime-common
 jbig2dec
 jemalloc
 john
+jre-openjdk
+jre-openjdk-headless
 json-c
 json-glib
 jsoncpp
