@@ -52,7 +52,7 @@ bspc rule -a Zathura state=tiled
 
 # Set desktop background
 sleep 0.50
-nitrogen --set-auto "$HOME/.config/bg.jpg" &
+~/.fehbg &
 
 # Start on desktop 1
 bspc desktop -f 1

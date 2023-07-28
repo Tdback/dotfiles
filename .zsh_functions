@@ -39,15 +39,17 @@ pkgs () { pacman -Q | wc -l | xargs -I{} echo "Packages installed: {}" ;}
 
 # Create a new Go project
 ngo () {
-  mkdir -p $1 && cd $1
+  mkdir -p "$1" && cd "$1"
   cp ~/Documents/LICENSE . 
   touch README.org
-  go mod init $1 
+  go mod init "$1" 
 
-  cat >./$2.go << EOL
+  cat >./"$2".go << EOL
 package main
 
-import "fmt"
+import (
+       "fmt"
+)
 
 func main() {
         fmt.Println("Don't Panic")
@@ -67,6 +69,18 @@ weather () {
 
 # Look for books fast
 textbook () {
-  textbook=$(echo $1 | sed 's/ /+/g')
+  textbook=$(echo "$1" | sed 's/ /+/g')
   $BROWSER "https://libgen.rs/search.php?req=$textbook"
+}
+
+# Set the current background
+sbg () {
+  images=$(ls ~/.config/backgrounds/)
+
+  selected=$(echo "$images" | fzf)
+  if [[ -z $selected ]]; then
+    exit 0
+  fi
+
+  feh --bg-scale "$HOME/.config/backgrounds/$selected" 
 }
