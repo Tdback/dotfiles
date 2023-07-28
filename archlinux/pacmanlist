@@ -171,7 +171,6 @@ gtk-update-icon-cache
 gtk-vnc
 gtk2
 gtk3
-gtkmm
 gtkmm3
 gtksourceview4
 gts
@@ -635,7 +634,6 @@ netpbm
 nettle
 networkmanager
 nftables
-nitrogen
 nmap
 node-gyp
 nodejs
