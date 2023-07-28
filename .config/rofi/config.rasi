@@ -2,7 +2,7 @@ configuration {
   display-drun: "Apps:";
   display-window: "Windows:";
   drun-display-format: "{icon} {name}";
-  font: "FantasqueSansMNerdFont 11";
+  font: "FantasqueSansMNerdFont 14";
   modi: "window,run,drun";
   show-icons: true;
   icon-theme: "Papirus";
@@ -26,7 +26,7 @@ configuration {
 }
 
 window {
-  width: 35%;
+  width: 40%;
 }
 
 element {
@@ -45,7 +45,7 @@ element-text {
 }
 
 element-icon {
-  size: 35;
+  size: 40;
 }
 
 entry {
@@ -67,6 +67,6 @@ listview {
 prompt {
   background-color: @bg-alt;
   enabled: true;
-  padding: 12 0 0 12;
+  padding: 14 0 0 14;
   text-color: @fg;
 }
