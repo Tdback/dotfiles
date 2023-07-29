@@ -75,12 +75,18 @@ textbook () {
 
 # Set the current background
 sbg () {
-  images=$(ls ~/.config/backgrounds/)
+  img_dir="$HOME/.local/backgrounds/"
+  if [[ "$1" == "-r" ]]; then
+    feh --bg-scale --randomize "$img_dir"
+    return
+  fi
+  
+  images=$(ls "$img_dir")
 
   selected=$(echo "$images" | fzf)
   if [[ -z $selected ]]; then
     exit 0
   fi
 
-  feh --bg-scale "$HOME/.config/backgrounds/$selected" 
+  feh --bg-scale "$img_dir$selected" 
 }
