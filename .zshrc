@@ -1,7 +1,5 @@
 # Tdback's zshrc
 
-export BROWSER="firefox"
-export LESSHISTFILE="-"
 HISTCONTROL=ignoreboth
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -11,8 +9,8 @@ setopt appendhistory
 # enable cd with just pathnames
 setopt autocd
 
-# emacs mode
-bindkey -e
+# vim mode
+bindkey -v
 
 # enable noclobber to prevent overwriting existing files with redirection
 set -o noclobber
@@ -27,25 +25,13 @@ if [ -x /usr/bin/dircolors ]; then
   alias egrep='egrep --color=auto'
 fi
 
-# Colored GCC warnings and errors
-export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+zstyle :compinstall filename '/home/td/.zshrc'
+autoload -Uz compinit
+compinit
 
-# Don't need this when using autocomplete plugin.
-# zstyle :compinstall filename '/home/td/.zshrc'
-# autoload -Uz compinit
-# compinit
-
-#  Source plugins ( using . )
-
-#  Syntax highlighting 
+#  Source plugins
+#  Syntax highlighting
 [ -d ~/.config/zsh/zsh-syntax-highlighting ] && . ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Autosuggestions
-[ -d ~/.config/zsh/zsh-autocomplete ] && . ~/.config/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-
-# Autosuggestions tab cycle
-bindkey '\t' menu-select "$terminfo[kcbt]" menu-select
-bindkey -M menuselect '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
 
 # history substring
 [ -d ~/.config/zsh/zsh-history-substring-search ] && . ~/.config/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
