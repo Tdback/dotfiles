@@ -14,7 +14,7 @@ window:
     x: 5
     y: 5
   decorations: none
-  #opacity: 
+  opacity: 0.9
   title: Alacritty
 
 scrolling:
