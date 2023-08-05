@@ -29,8 +29,8 @@ zstyle :compinstall filename '/home/td/.zshrc'
 autoload -Uz compinit
 compinit
 
-#  Source plugins
-#  Syntax highlighting
+# Source plugins
+# Syntax highlighting
 [ -d ~/.config/zsh/zsh-syntax-highlighting ] && . ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # history substring
@@ -43,9 +43,6 @@ bindkey '^[[B' history-substring-search-down
 # Source aliases file
 [ -f ~/.zsh_aliases ] && . ~/.zsh_aliases
 
-# Source functions file
-[ -f ~/.zsh_functions ] && . ~/.zsh_functions
-
 # Enable starship prompt
 eval "$(starship init zsh)"
 
@@ -54,7 +51,4 @@ eval "$(starship init zsh)"
 
 # opam configuration
 [[ ! -r /home/td/.opam/opam-init/init.zsh ]] || source /home/td/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
-
-# Welcome message
-echo "( .-.)"
 
