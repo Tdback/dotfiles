@@ -1,5 +1,8 @@
-function color_my_vim(color)
-    color = color or "moonfly"
+function ColorMyVim(color)
+    color = color or require("boo-colorscheme").use({
+        italic = true,
+        theme = "boo"
+    })
     vim.cmd.colorscheme(color)
 
     vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
@@ -7,4 +10,4 @@ function color_my_vim(color)
 
 end
 
-color_my_vim()
+ColorMyVim()

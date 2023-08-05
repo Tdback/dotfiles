@@ -5,7 +5,7 @@ vim.cmd.packadd('packer.nvim')
 
 return require('packer').startup(function(use)
    -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
+  use('wbthomason/packer.nvim')
 
   use {
       'nvim-telescope/telescope.nvim', tag = '0.1.2',
@@ -14,6 +14,8 @@ return require('packer').startup(function(use)
   }
 
   use { 'bluz71/vim-moonfly-colors', as = 'moonfly' }
+  use('rockerBOO/boo-colorscheme-nvim')
+  -- use('heraldofsolace/nisha-vim')
 
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
   use('nvim-treesitter/playground')
