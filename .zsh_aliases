@@ -30,7 +30,5 @@ alias xz='xz -v'
 alias python='/usr/bin/python3'
 alias ipy='$HOME/.local/bin/ipython'
 
-# Set neovim as default
-alias v='/usr/bin/nvim'
-alias vi='/usr/bin/nvim'
-alias vim='/usr/bin/nvim'
+# Set shortcut for neovim
+alias e='/usr/bin/nvim'
