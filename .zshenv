@@ -19,7 +19,7 @@ export GCC_COLORS="error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 # Add these directories to PATH on shell startup
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/.cargo/bin
-export PATH=$PATH:$HOME/.go
+export PATH=$PATH:$HOME/.scripts
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/.asdf/shims
 
