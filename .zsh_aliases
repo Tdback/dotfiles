@@ -1,6 +1,14 @@
-# Aliases sourced in ~/.zshrc
+# ==============================================================================
+#
+#   Author  : Tyler Dunneback
+#   Date    : Aug 05, 2023
+#   GitHub  : https://github.com/Tdback
+#
+#   Aliases and functions sourced in ~/.zshrc
+#
+# ==============================================================================
 
-# Terminal
+# Some helpful aliases.
 # File creation, destruction, etc
 alias cp='cp -iv'
 alias rm='rm -Idv'
@@ -32,3 +40,29 @@ alias ipy='$HOME/.local/bin/ipython'
 
 # Set shortcut for neovim
 alias e='/usr/bin/nvim'
+
+
+# Some helpful functions.
+mkdirg () {
+    mkdir -p "$1" && cd "$1" || exit 1
+}
+
+cpg () {
+    if [ -d "$2" ]
+    then
+        cp "$1" "$2" && cd "$2" || exit 1
+    else
+        cp "$1" "$2"
+    fi
+}
+
+mvg () {
+    if [ -d "$2" ]
+    then
+        mv "$1" "$2" && cd "$2" || exit 1
+    else
+        mv "$1" "$2"
+    fi
+}
+
+# vim: ft=sh
