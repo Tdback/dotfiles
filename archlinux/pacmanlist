@@ -207,7 +207,6 @@ jasper
 java-runtime-common
 jbig2dec
 jemalloc
-john
 jre-openjdk
 jre-openjdk-headless
 json-c
@@ -226,6 +225,7 @@ ldns
 ledger
 lensfun
 less
+lf
 lib32-alsa-lib
 lib32-alsa-plugins
 lib32-at-spi2-core
@@ -392,6 +392,7 @@ libcap
 libcap-ng
 libcloudproviders
 libcolord
+libconfig
 libcups
 libcurl-compat
 libcurl-gnutls
@@ -689,6 +690,7 @@ perl-mailtools
 perl-rename
 perl-timedate
 phodav
+picom
 pinentry
 pipewire
 pixman
