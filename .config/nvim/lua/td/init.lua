@@ -24,3 +24,9 @@ autocmd({"BufWritePre"}, {
     pattern = "*",
     command = [[%s/\s\+$//e]],
 })
+
+autocmd({"BufRead","BufNewFile"}, {
+    group = TdGroup,
+    pattern = "*.md",
+    command = "setlocal spell",
+})
