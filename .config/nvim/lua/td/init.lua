@@ -2,10 +2,11 @@ require("td.set")
 require("td.remap")
 
 local augroup = vim.api.nvim_create_augroup
-local TdGroup = augroup('td', {})
-
 local autocmd = vim.api.nvim_create_autocmd
+
+local TdGroup = augroup('td', {})
 local yank_group = augroup('HighlightYank', {})
+local spell_group = augroup('Spellcheck', {})
 
 
 autocmd('TextYankPost', {
@@ -26,7 +27,7 @@ autocmd({"BufWritePre"}, {
 })
 
 autocmd({"BufRead","BufNewFile"}, {
-    group = TdGroup,
+    group = spell_group,
     pattern = "*.md",
     command = "setlocal spell",
 })
