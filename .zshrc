@@ -1,12 +1,4 @@
-# ==============================================================================
-#
-#   Author  : Tyler Dunneback
-#   Date    : Aug 05, 2023
-#   GitHub  : https://github.com/Tdback
-#
-#   Tdback's zshrc
-#
-# ==============================================================================
+# Tdback's zsh config.
 
 autoload -U colors && colors
 # Customize my prompt by manipulating the PS1 environment variable
@@ -41,7 +33,7 @@ autoload -Uz compinit && compinit
 
 # Source syntax highlighting
 [ -d ~/.config/zsh/zsh-syntax-highlighting ] && . ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-#
+
 # Source history substring
 [ -d ~/.config/zsh/zsh-history-substring-search ] && . ~/.config/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 

@@ -1,12 +1,4 @@
-# ==============================================================================
-#
-#   Author  : Tyler Dunneback
-#   Date    : Aug 05, 2023
-#   GitHub  : https://github.com/Tdback
-#
-#   Aliases and functions sourced in ~/.zshrc
-#
-# ==============================================================================
+# Aliases and functions sourced in ~/.zshrc
 
 # Some helpful functions.
 mkdirg () { mkdir -p "$1" && cd "$1" || exit 1 ;}
