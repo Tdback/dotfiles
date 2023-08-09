@@ -8,44 +8,8 @@
 #
 # ==============================================================================
 
-# Some helpful aliases.
-# File creation, destruction, etc
-alias cp='cp -iv'
-alias rm='rm -Idv'
-alias mv='mv -iv'
-alias mkdir='mkdir -v'
-alias rmdir='rmdir -v'
-
-# Listings
-alias ll='ls -alF'
-alias l1='ls -1F'
-alias la='ls -AF'
-alias l='ls -CF'
-
-# Directory traversal
-alias bd='cd "$OLDPWD"'
-
-# Print where I `really' am
-alias pwd='pwd -P'
-
-# Abusing my CPU
-alias zip='zip -9v'
-alias gzip='gzip -9v'
-alias bzip2='bzip2 -9v'
-alias xz='xz -v'
-
-# Python aliases
-alias python='/usr/bin/python3'
-alias ipy='$HOME/.local/bin/ipython'
-
-# Set shortcut for neovim
-alias e='/usr/bin/nvim'
-
-
 # Some helpful functions.
-mkdirg () {
-    mkdir -p "$1" && cd "$1" || exit 1
-}
+mkdirg () { mkdir -p "$1" && cd "$1" || exit 1 ;}
 
 cpg () {
     if [ -d "$2" ]
@@ -64,5 +28,38 @@ mvg () {
         mv "$1" "$2"
     fi
 }
+
+# Extra verbosity you almost always are going to want on
+alias \
+    cp="cp -iv" \
+    rm="rm -Iv" \
+    mv="mv -iv" \
+    mkdir="mkdir -v" \
+    rmdir="rmdir -v" \
+    xz="xz -v"
+
+# Colorize commands when possible
+alias \
+    ls="ls --color=auto" \
+    grep="grep --color=auto" \
+    fgrep="fgrep --color=auto" \
+    egrep="egrep --color=auto" \
+    diff="diff --color=auto" \
+    ip="ip -color=auto"
+
+# Shortcuts for typing longer commands
+alias \
+    ll="ls -alF" \
+    l1="ls -1F" \
+    la="ls -AF" \
+    l="ls -CF" \
+    EDITOR="nvim" \
+    e="$EDITOR" \
+    ez="$EDITOR ~/.zsh_aliases" \
+    z="zathura" \
+    bd='cd "$OLDPWD"' \
+    pwd="pwd -P" \
+    rbn="shutdown -r now" \
+    sdn="shutdown -h now"
 
 # vim: ft=sh
