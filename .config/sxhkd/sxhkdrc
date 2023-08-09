@@ -1,5 +1,5 @@
-## Program hotkeys ## 
-# Rofi 
+## Program hotkeys ##
+# Rofi
 alt + Tab
         rofi -show window
 
@@ -25,6 +25,10 @@ super + m
 # Image editing
 super + g
         gimp
+
+# Take some notes
+super + n
+        obsidian
 
 # Screenshots
 super + p
@@ -106,7 +110,7 @@ super + {Left,Down,Up,Right}
         bspc node -v {-20 0,0 20,0 -20,20 0}
 
 ## Function hotkeys ##
-# Media keys        
+# Media keys
 XF86AudioPrev
         playerctl previous
 
