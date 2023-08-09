@@ -55,7 +55,8 @@ alias \
     l="ls -CF" \
     EDITOR="nvim" \
     e="$EDITOR" \
-    ez="$EDITOR ~/.zsh_aliases" \
+    ez="$EDITOR ~/.zshrc" \
+    ea="$EDITOR ~/.zsh_aliases" \
     z="zathura" \
     bd='cd "$OLDPWD"' \
     pwd="pwd -P" \
