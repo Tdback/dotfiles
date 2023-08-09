@@ -91,6 +91,8 @@ efibootmgr
 efivar
 egl-wayland
 eglexternalplatform
+electron
+electron25
 emacs
 enchant
 enet
@@ -116,6 +118,7 @@ freeglut
 freetype2
 fribidi
 fuse-common
+fuse2
 fuse3
 fzf
 gawk
@@ -620,6 +623,7 @@ mkinitcpio
 mkinitcpio-busybox
 mlocate
 mobile-broadband-provider-info
+moreutils
 mpfr
 mpg123
 msgpack-c
@@ -649,6 +653,7 @@ nvidia
 nvidia-settings
 nvidia-utils
 obs-studio
+obsidian
 ocaml
 ocaml-compiler-libs
 ocl-icd
@@ -677,6 +682,7 @@ pambase
 pango
 pangomm
 papirus-icon-theme
+parallel
 parted
 patch
 pavucontrol
@@ -686,8 +692,11 @@ pcre2
 pcsclite
 perl
 perl-error
+perl-io-tty
+perl-ipc-run
 perl-mailtools
 perl-rename
+perl-time-duration
 perl-timedate
 phodav
 picom
@@ -905,6 +914,7 @@ xcb-util-keysyms
 xcb-util-renderutil
 xcb-util-wm
 xcb-util-xrm
+xclip
 xdg-dbus-proxy
 xdg-utils
 xf86-input-libinput
