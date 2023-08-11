@@ -10,7 +10,6 @@ export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_CACHE_HOME="$HOME/.cache"
 
 export ANSIBLE_HOME="${XDG_CONFIG_HOME}/ansible"
-export ASDF_DATA_DIR="${XDG_DATA_HOME}/asdf"
 export CARGO_HOME="${XDG_DATA_HOME}/cargo"
 export GOPATH="${XDG_DATA_HOME}/go"
 export GTK2_RC_FILES="${XDG_CONFIG_HOME}/gtk-2.0/gtkrc"
