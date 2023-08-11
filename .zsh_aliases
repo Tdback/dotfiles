@@ -1,6 +1,5 @@
 # Aliases and functions sourced in ~/.zshrc
 
-# Some helpful functions.
 mkdirg () { mkdir -p "$1" && cd "$1" || exit 1 ;}
 
 cpg () {
