@@ -91,8 +91,6 @@ efibootmgr
 efivar
 egl-wayland
 eglexternalplatform
-electron
-electron25
 emacs
 enchant
 enet
@@ -118,7 +116,6 @@ freeglut
 freetype2
 fribidi
 fuse-common
-fuse2
 fuse3
 fzf
 gawk
@@ -653,12 +650,8 @@ nvidia
 nvidia-settings
 nvidia-utils
 obs-studio
-obsidian
-ocaml
-ocaml-compiler-libs
 ocl-icd
 oniguruma
-opam
 openal
 opencore-amr
 openexr
@@ -780,13 +773,10 @@ qemu-ui-spice-core
 qemu-vhost-user-gpu
 qt5-base
 qt5-declarative
-qt5-location
 qt5-multimedia
 qt5-svg
 qt5-translations
 qt5-wayland
-qt5-webchannel
-qt5-webengine
 qt5-x11extras
 qt6-base
 qt6-declarative
@@ -796,7 +786,6 @@ qt6-translations
 qt6-wayland
 rav1e
 raylib
-re2
 readline
 recode
 rhash
@@ -936,7 +925,6 @@ xvidcore
 xxhash
 xz
 yajl
-yuzu
 zathura
 zathura-pdf-poppler
 zenity
