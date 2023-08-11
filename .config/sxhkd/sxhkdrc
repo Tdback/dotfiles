@@ -26,10 +26,6 @@ super + m
 super + g
         gimp
 
-# Take some notes
-super + n
-        obsidian
-
 # Screenshots
 super + p
         flameshot full -p $HOME/.local/screenshots
