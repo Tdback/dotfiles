@@ -37,6 +37,3 @@ autoload -Uz compinit && compinit
 # Source history substring
 [ -d ~/.config/zsh/zsh-history-substring-search ] && . ~/.config/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 
-# asdf tool for managing different versions of tools I don't have installed as packages
-. /opt/asdf-vm/asdf.sh
-
