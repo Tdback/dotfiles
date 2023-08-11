@@ -40,6 +40,3 @@ autoload -Uz compinit && compinit
 # asdf tool for managing different versions of tools I don't have installed as packages
 . /opt/asdf-vm/asdf.sh
 
-# opam configuration
-[[ ! -r /home/td/.opam/opam-init/init.zsh ]] || . /home/td/.opam/opam-init/init.zsh >/dev/null 2>/dev/null
-
