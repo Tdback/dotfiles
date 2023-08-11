@@ -1,11 +1,10 @@
-#!/usr/bin/env bash
-languages=`echo "awk bash c cpp golang ocaml python rust sed" | tr ' ' '\n'`
+#!/bin/sh
+languages=$(echo "awk bash c cpp golang ocaml python rust sed" | tr ' ' '\n')
 
-selected=`printf "$languages" | fzf`
-if [[ -z $selected  ]]; then
-	exit 0
-fi
+selected=$(printf "%s" "$languages" | fzf)
 
-read -p "Enter Query: " query
+[ -z "$selected"  ] && exit 0
 
-tmux neww bash -c "curl cht.sh/$selected/`echo $query | tr ' ' '+'` & while [ : ]; do sleep 1; done"
+printf "Enter Query: " && read -r query
+
+tmux neww bash -c "curl cht.sh/$selected/$(echo "$query" | tr ' ' '+') & while [ : ]; do sleep 1; done"
