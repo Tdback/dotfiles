@@ -1,4 +1,3 @@
-a52dec
 aalib
 abseil-cpp
 acl
@@ -14,10 +13,10 @@ alsa-utils
 aom
 archlinux-keyring
 argon2
-aribb24
 at-spi2-core
 atkmm
 attr
+audiofile
 audit
 autoconf
 automake
@@ -50,6 +49,7 @@ cantarell-fonts
 capstone
 catatonit
 cdparanoia
+chromaprint
 clang
 cmake
 compiler-rt
@@ -100,7 +100,6 @@ faad2
 fakeroot
 feh
 ffmpeg
-ffmpeg4.4
 fftw
 file
 filesystem
@@ -109,6 +108,7 @@ firefox
 flac
 flameshot
 flex
+fluidsynth
 fmt
 fontconfig
 fortune-mod
@@ -371,6 +371,7 @@ lib32-xz
 lib32-zlib
 lib32-zstd
 libaio
+libao
 libarchive
 libass
 libassuan
@@ -390,6 +391,8 @@ libcamera-ipa
 libcanberra
 libcap
 libcap-ng
+libcdio
+libcdio-paranoia
 libcloudproviders
 libcolord
 libconfig
@@ -400,13 +403,12 @@ libdaemon
 libdatrie
 libdbusmenu-glib
 libdbusmenu-gtk2
-libdca
 libde265
 libdispatch
 libdrm
 libdv
-libdvbpsi
-libebml
+libdvdnav
+libdvdread
 libedit
 libelf
 libepoxy
@@ -422,11 +424,13 @@ libgexiv2
 libgirepository
 libgit2
 libglvnd
+libgme
 libgpg-error
 libgudev
 libheif
 libibus
 libice
+libid3tag
 libidn
 libidn11
 libidn2
@@ -434,6 +438,7 @@ libiec61883
 libindicator-gtk2
 libinih
 libinput
+libinstpatch
 libisl
 libisoburn
 libisofs
@@ -446,19 +451,18 @@ liblqr
 libluv
 libmad
 libmanette
-libmatroska
 libmaxminddb
 libmd
 libmfx
 libmikmod
 libmm-glib
+libmms
 libmng
 libmnl
 libmodplug
 libmpc
 libmpcdec
 libmpdclient
-libmpeg2
 libmypaint
 libndp
 libnet
@@ -501,6 +505,7 @@ libsasl
 libseccomp
 libsecret
 libshout
+libsidplayfp
 libsigc++
 libsigc++-3.0
 libslirp
@@ -516,7 +521,6 @@ libssh2
 libstemmer
 libsynctex
 libsysprof-capture
-libtar
 libtasn1
 libteam
 libtermkey
@@ -575,6 +579,7 @@ libxml2
 libxmu
 libxnvctrl
 libxpm
+libxpresent
 libxrandr
 libxrender
 libxshmfence
@@ -621,12 +626,17 @@ mkinitcpio-busybox
 mlocate
 mobile-broadband-provider-info
 moreutils
+mpc
+mpd
 mpfr
 mpg123
+mpv
 msgpack-c
 mtdev
+mujs
 multipath-tools
 mypaint-brushes1
+ncmpcpp
 ncurses
 ndctl
 neovim
@@ -794,6 +804,7 @@ rnnoise
 rofi
 rsync
 rtkit
+rubberband
 runc
 sbc
 sbcl
@@ -856,6 +867,7 @@ ttf-font-awesome
 ttf-opensans
 twolame
 tzdata
+uchardet
 ufw
 unibilium
 unzip
@@ -873,7 +885,6 @@ virglrenderer
 virt-install
 virt-manager
 virtiofsd
-vlc
 vmaf
 vte-common
 vte3
@@ -886,6 +897,7 @@ webkit2gtk
 webrtc-audio-processing
 wget
 which
+wildmidi
 wireshark-cli
 wireshark-qt
 wmctrl
@@ -934,3 +946,4 @@ zip
 zlib
 zsh
 zstd
+zziplib
