@@ -108,13 +108,16 @@ super + {Left,Down,Up,Right}
 ## Function hotkeys ##
 # Media keys
 XF86AudioPrev
-        playerctl previous
+        mpc prev
+        # playerctl previous
 
 XF86AudioNext
-        playerctl next
+        mpc next
+        # playerctl next
 
 XF86AudioPlay
-        playerctl play-pause
+        mpc toggle
+        # playerctl play-pause
 
 # Volume keys
 XF86AudioLowerVolume
