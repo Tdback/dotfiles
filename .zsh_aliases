@@ -51,6 +51,7 @@ alias \
     z="zathura" \
     bd='cd "$OLDPWD"' \
     pwd="pwd -P" \
+    gm="git push origin main" \
     rbn="shutdown -r now" \
     sdn="shutdown -h now"
 
