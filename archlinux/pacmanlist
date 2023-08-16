@@ -207,6 +207,7 @@ jasper
 java-runtime-common
 jbig2dec
 jemalloc
+jq
 jre-openjdk
 jre-openjdk-headless
 json-c
