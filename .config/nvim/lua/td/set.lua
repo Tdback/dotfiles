@@ -24,7 +24,7 @@ vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
 vim.opt.list = true
-vim.opt.lcs:append({ tab = "→\\ ", trail = '·', nbsp = '·' })
+vim.opt.lcs:append({ tab = "→ ", trail = '·', nbsp = '·' })
 
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
