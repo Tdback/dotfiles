@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/home/td/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["boo-colorscheme-nvim"] = {
-    loaded = true,
-    path = "/home/td/.local/share/nvim/site/pack/packer/start/boo-colorscheme-nvim",
-    url = "https://github.com/rockerBOO/boo-colorscheme-nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/td/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -134,11 +129,6 @@ _G.packer_plugins = {
     path = "/home/td/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  moonfly = {
-    loaded = true,
-    path = "/home/td/.local/share/nvim/site/pack/packer/start/moonfly",
-    url = "https://github.com/bluz71/vim-moonfly-colors"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/td/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -168,6 +158,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/td/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["rose-pine"] = {
+    loaded = true,
+    path = "/home/td/.local/share/nvim/site/pack/packer/start/rose-pine",
+    url = "https://github.com/rose-pine/neovim"
   },
   ["telescope.nvim"] = {
     loaded = true,
