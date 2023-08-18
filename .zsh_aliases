@@ -36,7 +36,8 @@ alias \
     fgrep="fgrep --color=auto" \
     egrep="egrep --color=auto" \
     diff="diff --color=auto" \
-    ip="ip -color=auto"
+    ip="ip -color=auto" \
+    tree="tree -C"
 
 # Shortcuts for typing longer commands
 alias \
