@@ -41,10 +41,10 @@ alias \
 
 # Shortcuts for typing longer commands
 alias \
-    ll="ls -alF" \
-    l1="ls -1F" \
-    la="ls -AF" \
-    l="ls -CF" \
+    ll="lsd -alF" \
+    l1="lsd -1F" \
+    la="lsd -AF" \
+    l="lsd -F" \
     EDITOR="nvim" \
     e="$EDITOR" \
     ez="$EDITOR ~/.zshrc" \
@@ -52,8 +52,17 @@ alias \
     z="zathura" \
     bd='cd "$OLDPWD"' \
     pwd="pwd -P" \
-    gm="git push origin main" \
     rbn="shutdown -r now" \
-    sdn="shutdown -h now"
+    sdn="shutdown -h now" \
+    cl="clear"
+
+# Git shortcuts
+alias \
+    ginit="git init" \
+    gpush="git push origin" \
+    gcommit="git commit -m" \
+    gadd="git add" \
+    gstatus="git status" \
+    gdiff="git diff"
 
 # vim: ft=sh
