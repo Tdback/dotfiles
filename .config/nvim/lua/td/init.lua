@@ -20,15 +20,15 @@ autocmd('TextYankPost', {
     end,
 })
 
-autocmd({"BufWritePre"}, {
+autocmd({ "BufWritePre" }, {
     group = TdGroup,
     pattern = "*",
     command = [[%s/\s\+$//e]],
 })
 
-autocmd({"BufRead","BufNewFile"}, {
+autocmd({ "BufRead", "BufNewFile" }, {
     group = spell_group,
-    pattern = "*.md",
+    pattern = { "*.md", "*.txt" },
     command = "setlocal spell",
 })
 
