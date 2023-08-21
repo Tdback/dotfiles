@@ -45,7 +45,6 @@ alias \
     l1="lsd -1F" \
     la="lsd -AF" \
     l="lsd -F" \
-    EDITOR="nvim" \
     e="$EDITOR" \
     ez="$EDITOR ~/.zshrc" \
     ea="$EDITOR ~/.zsh_aliases" \
