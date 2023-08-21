@@ -1,69 +1,24 @@
 # Minimal alacritty config
+import:
+  - ~/.config/alacritty/font.yml
+  - ~/.config/alacritty/color.yml
 
 env:
   TERM: xterm-256color
 
 window:
-  #dimensions:
-  #  columns: 0
-  #  lines:   0
-  #position:
-  #  x: 0
-  #  y: 0
+  title: Alacritty
+
   padding:
     x: 5
     y: 5
+
   decorations: none
+
   opacity: 0.9
-  title: Alacritty
 
 scrolling:
-  history: 100000
-
-font:
-  normal:
-    family: FantasqueSansMNerdFont
-    style: Regular
-  bold:
-    family: FantasqueSansMNerdFont
-    style: Bold
-  italic:
-    family: FantasqueSansMNerdFont
-    style: Italic
-  bold_italic:
-    family: FantasqueSansMNerdFont
-    style: Bold Italic
-  size: 20.0
-draw_bold_text_with_bright_colors: true
+  history: 10000
 
 mouse:
   hide_when_typing: true
-
-# Colors (Wombat)
-colors:
-  # Default colors
-  primary:
-    background: '#000000'
-    foreground: '0xe5e1d8'
-
-  # Normal colors
-  normal:
-    black:   '0x000000'
-    red:     '0xf7786d'
-    green:   '0xbde97c'
-    yellow:  '0xefdfac'
-    blue:    '0x6ebaf8'
-    magenta: '0xef88ff'
-    cyan:    '0x90fdf8'
-    white:   '0xe5e1d8'
-
-  # Bright colors
-  bright:
-    black:   '0xb4b4b4'
-    red:     '0xf99f92'
-    green:   '0xe3f7a1'
-    yellow:  '0xf2e9bf'
-    blue:    '0xb3d2ff'
-    magenta: '0xe5bdff'
-    cyan:    '0xc2fefa'
-    white:   '0xffffff'

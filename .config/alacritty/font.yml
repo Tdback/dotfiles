@@ -1,0 +1,20 @@
+font:
+  normal:
+    family: FantasqueSansMNerdFont
+    style: Regular
+
+  bold:
+    family: FantasqueSansMNerdFont
+    style: Bold
+
+  italic:
+    family: FantasqueSansMNerdFont
+    style: Italic
+
+  bold_italic:
+    family: FantasqueSansMNerdFont
+    style: Bold Italic
+
+  size: 20.0
+
+draw_bold_text_with_bright_colors: true
