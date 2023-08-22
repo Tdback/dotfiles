@@ -1,5 +1,5 @@
 #!/bin/sh
-languages=$(echo "awk bash c cpp golang ocaml python rust sed" | tr ' ' '\n')
+languages=$(cat "${XDG_CONFIG_HOME}/tmux/tmux-cht-languages" "${XDG_CONFIG_HOME}/tmux/tmux-cht-programs")
 
 selected=$(printf "%s" "$languages" | fzf)
 
