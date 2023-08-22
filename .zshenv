@@ -1,9 +1,9 @@
-# default apps
+# Default apps
 export EDITOR="nvim"
 export TERMINAL="alacritty"
 export BROWSER="firefox"
 
-# cleaning up home folder
+# Cleaning up home folder
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
@@ -17,9 +17,12 @@ export GNUPGHOME="${XDG_DATA_HOME}/gnupg"
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="${XDG_CONFIG_HOME}/java"
 export LESSHISTFILE="-"
 export NODE_REPL_HISTORY="${XDG_DATA_HOME}/node_repl_history"
+export NPM_CONFIG_USERCONFIG="${XDG_CONFIG_HOME}/npm/npmrc"
+export PARALLEL_HOME="${XDG_CONFIG_HOME}/parallel"
 export RUSTUP_HOME="${XDG_DATA_HOME}/rustup"
 export SQLITE_HISTORY="${XDG_DATA_HOME}/sqlite_history"
 export WGETRC="${XDG_CONFIG_HOME}/.config}/wget/wgetrc"
+export ZDOTDIR="${XDG_CONFIG_HOME}/zsh"
 
 # Colored GCC warnings and errors
 export GCC_COLORS="error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01"
@@ -31,3 +34,6 @@ export PATH=$PATH:$HOME/.scripts
 export PATH=$PATH:/usr/local/go/bin
 
 typeset -U PATH
+
+# Set UTF-8 as default encoding
+export LC_ALL=en_US.UTF-8

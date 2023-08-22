@@ -46,14 +46,16 @@ alias \
     la="lsd -AF" \
     l="lsd -F" \
     e="$EDITOR" \
-    ez="$EDITOR ~/.zshrc" \
-    ea="$EDITOR ~/.zsh_aliases" \
+    se="sudo $EDITOR" \
+    ez="$EDITOR ~/.dotfiles/.config/zsh/.zshrc" \
+    ea="$EDITOR ~/.dotfiles/.config/zsh/aliases" \
     z="zathura" \
     bd='cd "$OLDPWD"' \
     pwd="pwd -P" \
     rbn="shutdown -r now" \
     sdn="shutdown -h now" \
-    cl="clear"
+    cl="clear" \
+    sourcez="source ~/.dotfiles/.config/zsh/.zshrc"
 
 # Git shortcuts
 alias \
@@ -61,6 +63,7 @@ alias \
     gpush="git push origin" \
     gcommit="git commit -m" \
     gadd="git add" \
+    grm="git rm" \
     gstatus="git status" \
     gdiff="git diff"
 

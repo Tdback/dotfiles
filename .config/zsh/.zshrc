@@ -12,7 +12,7 @@ setopt incappendhistory     # append each command to history `before' it is run
 
 # Set my history file and size
 HISTCONTROL=ignoreboth
-HISTFILE=~/.zsh_history
+HISTFILE="${XDG_CACHE_HOME}/zsh/history"
 HISTSIZE=1000000
 SAVEHIST=1000000
 
@@ -25,15 +25,15 @@ bindkey -v '^g' vi-cmd-mode # A bad habit I picked up from using Emacs for eight
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-zstyle :compinstall filename '/home/td/.zshrc'
+zstyle :compinstall filename "${XDG_CONFIG_HOME}/zsh/.zshrc"
 autoload -Uz compinit && compinit
 
 # Source aliases file
-[ -f ~/.zsh_aliases ] && . ~/.zsh_aliases
+[ -f "${XDG_CONFIG_HOME}/zsh/aliases" ] && . "${XDG_CONFIG_HOME}/zsh/aliases"
 
 # Source syntax highlighting
-[ -d ~/.config/zsh/zsh-syntax-highlighting ] && . ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[ -d "${XDG_CONFIG_HOME}/zsh/zsh-syntax-highlighting" ] && . "${XDG_CONFIG_HOME}/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 # Source history substring
-[ -d ~/.config/zsh/zsh-history-substring-search ] && . ~/.config/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
+[ -d "${XDG_CONFIG_HOME}/zsh/zsh-history-substring-search" ] && . "${XDG_CONFIG_HOME}/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh"
 
