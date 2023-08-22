@@ -1,0 +1,49 @@
+# Basic settings
+set hidden true
+set icons true
+
+# Custom functions
+cmd mkdir ${{
+    printf "Directory Name: "
+    read -r ans
+    mkdir "$ans" && notify-send "Successfully created directory '$ans'"
+}}
+
+cmd mkfile ${{
+    clear
+    printf "File Name: "
+    read -r ans
+    "$EDITOR" "$ans"
+}}
+
+cmd remove ${{
+    base=$(basename "$f")
+    ans=$(printf "Yes\nNo\n" | fzf-tmux --reverse --prompt="Delete '$base': ")
+
+    [ -z "$ans" ] && exit 0
+
+    case "$ans" in
+        "Yes") rm -r "$f" && notify-send "Removed '$base'" && break ;;
+
+        "No") break ;;
+
+        *) notify-send "Invalid option" ;;
+    esac
+}}
+
+# Remove some defaults
+map d
+map m
+
+# Basic functions
+map . set hidden!
+map p paste
+map x cut
+map y copy
+map D remove
+map <enter> open
+map R reload
+map mf mkfile
+map md mkdir
+
+# vim: ft=rc
