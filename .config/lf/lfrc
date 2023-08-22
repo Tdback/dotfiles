@@ -10,7 +10,6 @@ cmd mkdir ${{
 }}
 
 cmd mkfile ${{
-    clear
     printf "File Name: "
     read -r ans
     "$EDITOR" "$ans"
