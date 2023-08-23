@@ -55,7 +55,8 @@ alias \
     rbn="shutdown -r now" \
     sdn="shutdown -h now" \
     cl="clear" \
-    sourcez="source ~/.dotfiles/.config/zsh/.zshrc"
+    sourcez="source ~/.dotfiles/.config/zsh/.zshrc" \
+    tn="tmux start-server \; new"
 
 # Git shortcuts
 alias \
