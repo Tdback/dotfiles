@@ -30,6 +30,14 @@ cmd remove ${{
     esac
 }}
 
+# Hacky solution to open images using lf
+cmd view_image ${{
+    if [ $(echo "$f" | grep -E "\.(svg|png|jpg|jpeg|gif|mpeg|mpg)") ]
+    then
+        sxiv "$f" &
+    fi
+}}
+
 # Remove some defaults
 map d
 map m
@@ -40,6 +48,7 @@ map p paste
 map x cut
 map y copy
 map D remove
+map i view_image
 map <enter> open
 map R reload
 map mf mkfile
