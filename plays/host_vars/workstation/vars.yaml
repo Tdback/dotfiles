@@ -1,0 +1,81 @@
+---
+username: td
+group: wheel
+
+paths:
+  - "/home/{{ username }}/.config/"
+  - "/home/{{ username }}/.config/alacritty/"
+  - "/home/{{ username }}/.config/autostart/"
+  - "/home/{{ username }}/.config/bspwm/"
+  - "/home/{{ username }}/.config/lf/"
+  - "/home/{{ username }}/.config/mpd/"
+  - "/home/{{ username }}/.config/ncmpcpp/"
+  - "/home/{{ username }}/.config/picom/"
+  - "/home/{{ username }}/.config/polybar/"
+  - "/home/{{ username }}/.config/rofi/"
+  - "/home/{{ username }}/.config/sxhkd/"
+  - "/home/{{ username }}/.config/tmux/"
+  - "/home/{{ username }}/.config/zsh/"
+
+mode: '0755'
+
+links:
+  - src: "/home/{{ username }}/.dotfiles/.config/alacritty/alacritty.yml"
+    dest: "/home/{{ username }}/.config/alacritty/alacritty.yml"
+  - src: "/home/{{ username }}/.dotfiles/.config/alacritty/color.yml"
+    dest: "/home/{{ username }}/.config/alacritty/color.yml"
+  - src: "/home/{{ username }}/.dotfiles/.config/alacritty/font.yml"
+    dest: "/home/{{ username }}/.config/alacritty/font.yml"
+
+  - src: "/home/{{ username }}/.dotfiles/.config/autostart/startup.sh"
+    dest: "/home/{{ username }}/.config/autostart/startup.sh"
+
+  - src: "/home/{{ username }}/.dotfiles/.config/betterlockscreenrc"
+    dest: "/home/{{ username }}/.config/betterlockscreenrc"
+
+  - src: "/home/{{ username }}/.dotfiles/.config/bspwm/bspwmrc"
+    dest: "/home/{{ username }}/.config/bspwm/bspwmrc"
+
+  - src: "/home/{{ username }}/.dotfiles/.config/lf/icons"
+    dest: "/home/{{ username }}/.config/lf/icons"
+  - src: "/home/{{ username }}/.dotfiles/.config/lf/lfrc"
+    dest: "/home/{{ username }}/.config/lf/lfrc"
+
+  - src: "/home/{{ username }}/.dotfiles/.config/mpd/mpd.conf"
+    dest: "/home/{{ username }}/.config/mpd/mpd.conf"
+
+  - src: "/home/{{ username }}/.dotfiles/.config/ncmpcpp/bindings"
+    dest: "/home/{{ username }}/.config/ncmpcpp/bindings"
+  - src: "/home/{{ username }}/.dotfiles/.config/ncmpcpp/config"
+    dest: "/home/{{ username }}/.config/ncmpcpp/config"
+
+  - src: "/home/{{ username }}/.dotfiles/.config/nvim"
+    dest: "/home/{{ username }}/.config/nvim"
+
+  - src: "/home/{{ username }}/.dotfiles/.config/picom/picom.conf"
+    dest: "/home/{{ username }}/.config/picom/picom.conf"
+
+  - src: "/home/{{ username }}/.dotfiles/.config/polybar/config.ini"
+    dest: "/home/{{ username }}/.config/polybar/config.ini"
+  - src: "/home/{{ username }}/.dotfiles/.config/polybar/launch.sh"
+    dest: "/home/{{ username }}/.config/polybar/launch.sh"
+
+  - src: "/home/{{ username }}/.dotfiles/.config/rofi/config.rasi"
+    dest: "/home/{{ username }}/.config/rofi/config.rasi"
+
+  - src: "/home/{{ username }}/.dotfiles/.config/tmux/tmux-cht-languages"
+    dest: "/home/{{ username }}/.config/tmux/tmux-cht-languages"
+  - src: "/home/{{ username }}/.dotfiles/.config/tmux/tmux-cht-programs"
+    dest: "/home/{{ username }}/.config/tmux/tmux-cht-programs"
+  - src: "/home/{{ username }}/.dotfiles/.config/tmux/tmux.cht.sh"
+    dest: "/home/{{ username }}/.config/tmux/tmux.cht.sh"
+  - src: "/home/{{ username }}/.dotfiles/.config/tmux/tmux.conf"
+    dest: "/home/{{ username }}/.config/tmux/tmux.conf"
+
+  - src: "/home/{{ username }}/.dotfiles/.config/zsh/.zshrc"
+    dest: "/home/{{ username }}/.config/zsh/.zshrc"
+  - src: "/home/{{ username }}/.dotfiles/.config/zsh/aliases"
+    dest: "/home/{{ username }}/.config/zsh/aliases"
+
+  - src: "/home/{{ username }}/.dotfiles/.zshenv"
+    dest: "/home/{{ username }}/.zshenv"
