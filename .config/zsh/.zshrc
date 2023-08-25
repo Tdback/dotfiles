@@ -21,10 +21,6 @@ bindkey -v
 export KEYTIMEOUT=1
 bindkey -v '^g' vi-cmd-mode # A bad habit I picked up from using Emacs for eight months
 
-# History searching with arrows in `insert' mode
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-
 zstyle :compinstall filename "${XDG_CONFIG_HOME}/zsh/.zshrc"
 autoload -Uz compinit && compinit
 
@@ -37,3 +33,6 @@ autoload -Uz compinit && compinit
 # Source history substring
 [ -d "${XDG_CONFIG_HOME}/zsh/zsh-history-substring-search" ] && . "${XDG_CONFIG_HOME}/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh"
 
+# History searching with arrows in `insert' mode
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
