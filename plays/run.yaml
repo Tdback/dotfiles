@@ -1,6 +1,0 @@
----
-- name: Configure dotfiles
-  hosts: arch
-
-  tasks:
-    - import_tasks: ./tasks/link.yaml

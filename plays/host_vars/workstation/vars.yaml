@@ -79,3 +79,11 @@ links:
 
   - src: "/home/{{ username }}/.dotfiles/.zshenv"
     dest: "/home/{{ username }}/.zshenv"
+
+packages: "{{ lookup('file', '/home/{{ username }}/.dotfiles/archlinux/pacmanlist') | split('\n') }}"
+
+zsh_plugs:
+  - repo: https://github.com/zsh-users/zsh-syntax-highlighting.git
+    dest: "/home/{{ username }}/.config/zsh/zsh-syntax-highlighting/"
+  - repo: https://github.com/zsh-users/zsh-history-substring-search.git
+    dest: "/home/{{ username }}/.config/zsh/zsh-history-substring-search/"
