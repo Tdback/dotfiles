@@ -11,6 +11,7 @@
         owner: "{{ username }}"
         group: "{{ group }}"
       loop: "{{ paths }}"
+      tags: dirs
 
     - name: Link dotfiles to respective locations
       ansible.builtin.file:
@@ -20,15 +21,18 @@
         group: "{{ group }}"
         state: link
       loop: "{{ links }}"
+      tags: link
 
     - name: Install missing packages
       become: true
       ansible.builtin.package:
         name: "{{ packages }}"
         state: present
+      tags: packages
 
     - name: Install zsh plugins
       ansible.builtin.git:
         repo: "{{ item.repo }}"
         dest: "{{ item.dest }}"
       loop: "{{ zsh_plugs }}"
+      tags: zsh
