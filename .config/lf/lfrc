@@ -22,11 +22,17 @@ cmd remove ${{
     [ -z "$ans" ] && exit 0
 
     case "$ans" in
-        "Yes") rm -r "$f" && notify-send "Removed '$base'" && break ;;
+        "Yes")
+            rm -r "$f" && notify-send "Removed '$base'" && break
+            ;;
 
-        "No") break ;;
+        "No")
+            break
+            ;;
 
-        *) notify-send "Invalid option" ;;
+        *)
+            notify-send "Invalid option"
+            ;;
     esac
 }}
 
