@@ -36,3 +36,10 @@
         dest: "{{ item.dest }}"
       loop: "{{ zsh_plugs }}"
       tags: zsh
+
+    - name: Install Packer (neovim plugin manager)
+      ansible.builtin.git:
+        repo: "{{ packer.repo }}"
+        dest: "{{ packer.dest }}"
+        depth: "{{ packer.depth }}"
+      tags: neovim
