@@ -30,6 +30,13 @@
         state: present
       tags: packages
 
+    - name: Set default shell to zsh
+      become: true
+      ansible.builtin.shell:
+        cmd: "chsh -s /usr/bin/zsh {{ username | ansible.builtin.quote }}"
+      when: ansible_facts.user_shell != "/usr/bin/zsh"
+      tags: zsh
+
     - name: Install zsh plugins
       ansible.builtin.git:
         repo: "{{ item.repo }}"
@@ -43,3 +50,5 @@
         dest: "{{ packer.dest }}"
         depth: "{{ packer.depth }}"
       tags: neovim
+
+
