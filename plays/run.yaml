@@ -51,4 +51,3 @@
         depth: "{{ packer.depth }}"
       tags: neovim
 
-
