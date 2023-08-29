@@ -5,6 +5,7 @@ lsp.preset("recommended")
 lsp.ensure_installed({
   'lua_ls',
   'rust_analyzer',
+  'perlnavigator'
 })
 
 -- Fix Undefined global 'vim'
