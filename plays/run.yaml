@@ -30,6 +30,37 @@
         state: present
       tags: packages
 
+    - name: Check to see if yay is already installed
+      ansible.builtin.stat:
+        path: /usr/bin/yay
+      register: yay_installed
+      tags: yay
+
+    - name: Install yay dependencies
+      become: true
+      ansible.builtin.package:
+        name:
+          - git
+          - base-devel
+        state: present
+      when: yay_installed.stat.exists == false
+      tags: yay
+
+    - name: Clone the yay PKGBUILD
+      ansible.builtin.git:
+        repo: "{{ yay.repo }}"
+        dest: "{{ yay.dest }}"
+      when: yay_installed.stat.exists == false
+      tags: yay
+
+    - name: Build yay with makepkg
+      become: true
+      ansible.builtin.shell:
+        cmd: makepkg -sic
+        chdir: "{{ yay.dest }}"
+      when: yay_installed.stat.exists == false
+      tags: yay
+
     - name: Set default shell to zsh
       become: true
       ansible.builtin.shell:
