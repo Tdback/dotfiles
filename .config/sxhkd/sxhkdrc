@@ -33,10 +33,6 @@ super + p
 super + shift + p
         flameshot gui -p $HOME/.local/screenshots
 
-# Lockscreen
-super + shift + n
-        betterlockscreen --lock blur
-
 # Reload polybar
 super + Escape
         $HOME/.config/polybar/launch.sh
