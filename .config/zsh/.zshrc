@@ -3,7 +3,7 @@
 autoload -U colors && colors
 # Customize my prompt by manipulating the PS1 environment variable
 PS1="
-%{$fg[blue]%}%~ %{$fg[yellow]%}λ%{$reset_color%} "
+%{$fg[blue]%}%~ %{$fg[yellow]%}$%{$reset_color%} "
 
 set -o noclobber            # enable noclobber to prevent overwriting w/ redirection
 setopt autocd               # auto cd into typed directory
