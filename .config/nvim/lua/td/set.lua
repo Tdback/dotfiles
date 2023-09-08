@@ -35,7 +35,7 @@ vim.opt.foldlevel = 99
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "81"
+vim.opt.colorcolumn = "80"
 vim.opt.cursorline = true
 vim.opt.cursorlineopt = "number"
 
