@@ -7,6 +7,7 @@ paths:
   - "/home/{{ username }}/.config/alacritty/"
   - "/home/{{ username }}/.config/autostart/"
   - "/home/{{ username }}/.config/bspwm/"
+  - "/home/{{ username }}/.config/gtk-3.0/"
   - "/home/{{ username }}/.config/lf/"
   - "/home/{{ username }}/.config/mpd/"
   - "/home/{{ username }}/.config/ncmpcpp/"
@@ -30,11 +31,11 @@ links:
   - src: "/home/{{ username }}/.dotfiles/.config/autostart/startup.sh"
     dest: "/home/{{ username }}/.config/autostart/startup.sh"
 
-  - src: "/home/{{ username }}/.dotfiles/.config/betterlockscreenrc"
-    dest: "/home/{{ username }}/.config/betterlockscreenrc"
-
   - src: "/home/{{ username }}/.dotfiles/.config/bspwm/bspwmrc"
     dest: "/home/{{ username }}/.config/bspwm/bspwmrc"
+
+  - src: "/home/{{ username }}/.dotfiles/.config/gtk-3.0/settings.ini"
+    dest: "/home/{{ username }}/.config/gtk-3.0/settings.ini"
 
   - src: "/home/{{ username }}/.dotfiles/.config/lf/icons"
     dest: "/home/{{ username }}/.config/lf/icons"
