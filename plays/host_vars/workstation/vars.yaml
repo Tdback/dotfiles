@@ -5,15 +5,14 @@ group: wheel
 paths:
   - "/home/{{ username }}/.config/"
   - "/home/{{ username }}/.config/alacritty/"
-  - "/home/{{ username }}/.config/autostart/"
-  - "/home/{{ username }}/.config/bspwm/"
   - "/home/{{ username }}/.config/gtk-3.0/"
   - "/home/{{ username }}/.config/lf/"
   - "/home/{{ username }}/.config/mpd/"
   - "/home/{{ username }}/.config/ncmpcpp/"
+  - "/home/{{ username }}/.config/openbox/"
   - "/home/{{ username }}/.config/polybar/"
   - "/home/{{ username }}/.config/rofi/"
-  - "/home/{{ username }}/.config/sxhkd/"
+  - "/home/{{ username }}/.config/tint2/"
   - "/home/{{ username }}/.config/tmux/"
   - "/home/{{ username }}/.config/zsh/"
 
@@ -26,12 +25,6 @@ links:
     dest: "/home/{{ username }}/.config/alacritty/color.yml"
   - src: "/home/{{ username }}/.dotfiles/.config/alacritty/font.yml"
     dest: "/home/{{ username }}/.config/alacritty/font.yml"
-
-  - src: "/home/{{ username }}/.dotfiles/.config/autostart/startup.sh"
-    dest: "/home/{{ username }}/.config/autostart/startup.sh"
-
-  - src: "/home/{{ username }}/.dotfiles/.config/bspwm/bspwmrc"
-    dest: "/home/{{ username }}/.config/bspwm/bspwmrc"
 
   - src: "/home/{{ username }}/.dotfiles/.config/gtk-3.0/settings.ini"
     dest: "/home/{{ username }}/.config/gtk-3.0/settings.ini"
@@ -52,6 +45,13 @@ links:
   - src: "/home/{{ username }}/.dotfiles/.config/nvim"
     dest: "/home/{{ username }}/.config/nvim"
 
+  - src: "/home/{{ username }}/.dotfiles/.config/openbox/autostart"
+    dest: "/home/{{ username }}/.config/openbox/autostart"
+  - src: "/home/{{ username }}/.dotfiles/.config/openbox/menu.xml"
+    dest: "/home/{{ username }}/.config/openbox/menu.xml"
+  - src: "/home/{{ username }}/.dotfiles/.config/openbox/rc.xml"
+    dest: "/home/{{ username }}/.config/openbox/rc.xml"
+
   - src: "/home/{{ username }}/.dotfiles/.config/polybar/config.ini"
     dest: "/home/{{ username }}/.config/polybar/config.ini"
   - src: "/home/{{ username }}/.dotfiles/.config/polybar/launch.sh"
@@ -59,6 +59,9 @@ links:
 
   - src: "/home/{{ username }}/.dotfiles/.config/rofi/config.rasi"
     dest: "/home/{{ username }}/.config/rofi/config.rasi"
+
+  - src: "/home/{{ username }}/.dotfiles/.config/tint2/tint2rc"
+    dest: "/home/{{ username }}//.config/tint2/tint2rc"
 
   - src: "/home/{{ username }}/.dotfiles/.config/tmux/tmux-cht-languages"
     dest: "/home/{{ username }}/.config/tmux/tmux-cht-languages"
