@@ -199,12 +199,14 @@ iniparser
 iproute2
 iptables-nft
 iputils
+irssi
 iso-codes
 jack2
 jansson
 jasper
 java-runtime-common
 jbig2dec
+jbigkit
 jemalloc
 jq
 jre-openjdk
@@ -395,7 +397,6 @@ libcdio
 libcdio-paranoia
 libcloudproviders
 libcolord
-libconfig
 libcups
 libcurl-compat
 libcurl-gnutls
@@ -404,6 +405,7 @@ libdatrie
 libdbusmenu-glib
 libdbusmenu-gtk2
 libde265
+libdeflate
 libdispatch
 libdrm
 libdv
@@ -412,7 +414,6 @@ libdvdread
 libedit
 libelf
 libepoxy
-libev
 libevdev
 libevent
 libexif
@@ -482,6 +483,7 @@ libomxil-bellagio
 libopenmpt
 libosinfo
 libotf
+libotr
 libp11-kit
 libpaper
 libpcap
@@ -618,6 +620,7 @@ man-db
 man-pages
 mbedtls
 md4c
+menumaker
 mesa
 miniupnpc
 minizip
@@ -660,10 +663,12 @@ nuspell
 nvidia
 nvidia-settings
 nvidia-utils
+obconf
 obs-studio
 ocl-icd
 oniguruma
 openal
+openbox
 opencore-amr
 openexr
 openjpeg2
@@ -703,7 +708,6 @@ perl-rename
 perl-time-duration
 perl-timedate
 phodav
-picom
 pinentry
 pipewire
 pixman
@@ -859,6 +863,7 @@ tcpdump
 tdb
 telegram-desktop
 texinfo
+tint2
 tldr
 tmux
 tpm2-tss
@@ -867,7 +872,9 @@ tracker3
 tree
 tree-sitter
 tslib
+ttf-dejavu
 ttf-font-awesome
+ttf-liberation
 ttf-opensans
 twolame
 tzdata
