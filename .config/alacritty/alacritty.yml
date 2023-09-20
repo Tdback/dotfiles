@@ -4,7 +4,7 @@ import:
   - ~/.config/alacritty/color.yml
 
 env:
-  TERM: xterm-256color
+  TERM: tmux-256color
 
 window:
   title: Alacritty
@@ -13,9 +13,9 @@ window:
     x: 5
     y: 5
 
-  decorations: none
+  decorations: Full
 
-  opacity: 0.9
+  opacity: 1.0
 
 scrolling:
   history: 10000
