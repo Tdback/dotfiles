@@ -292,6 +292,22 @@
         <x>center</x>
         <y>center</y>
       </action>
+      </keybind>
+      <keybind key="W-equal">
+      <action name="ResizeRelative">
+        <left>5</left>
+        <right>5</right>
+        <top>5</top>
+        <bottom>5</bottom>
+      </action>
+    </keybind>
+    <keybind key="W-minus">
+      <action name="ResizeRelative">
+        <left>-5</left>
+        <right>-5</right>
+        <top>-5</top>
+        <bottom>-5</bottom>
+      </action>
     </keybind>
     <!-- Keybindings for moving windows with the arrow keys -->
     <keybind key="W-Up">
