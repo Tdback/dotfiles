@@ -309,6 +309,9 @@
         <bottom>-5</bottom>
       </action>
     </keybind>
+    <keybind key="W-n">
+      <action name="Iconify"/>
+    </keybind>
     <!-- Keybindings for moving windows with the arrow keys -->
     <keybind key="W-Up">
       <action name="UnmaximizeFull"/>
