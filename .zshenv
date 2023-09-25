@@ -22,6 +22,7 @@ export PARALLEL_HOME="${XDG_CONFIG_HOME}/parallel"
 export RUSTUP_HOME="${XDG_DATA_HOME}/rustup"
 export SQLITE_HISTORY="${XDG_DATA_HOME}/sqlite_history"
 export WGETRC="${XDG_CONFIG_HOME}/wget/wgetrc"
+export WORKON_HOME="${XDG_DATA_HOME}/virtualenvs"
 export ZDOTDIR="${XDG_CONFIG_HOME}/zsh"
 
 # Colored GCC warnings and errors
