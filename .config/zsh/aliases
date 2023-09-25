@@ -57,7 +57,8 @@ alias \
     cl="clear" \
     sourcez="source ~/.dotfiles/.config/zsh/.zshrc" \
     tn="tmux start-server \; new" \
-    ta="tmux attach"
+    ta="tmux attach" \
+    wormhole="~/.local/share/virtualenv/venv/bin/wormhole"
 
 # Git shortcuts
 alias \
