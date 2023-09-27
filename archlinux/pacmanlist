@@ -34,6 +34,7 @@ bison
 blas
 bluez-libs
 boost-libs
+bore
 bridge-utils
 brotli
 bspwm
@@ -224,6 +225,7 @@ lame
 lapack
 lcms2
 ldns
+leafpad
 ledger
 lensfun
 less
@@ -319,6 +321,7 @@ lib32-libxau
 lib32-libxcb
 lib32-libxcomposite
 lib32-libxcrypt
+lib32-libxcrypt-compat
 lib32-libxcursor
 lib32-libxdamage
 lib32-libxdmcp
@@ -407,6 +410,7 @@ libdbusmenu-gtk2
 libde265
 libdeflate
 libdispatch
+libdovi
 libdrm
 libdv
 libdvdnav
@@ -563,6 +567,7 @@ libxaw
 libxcb
 libxcomposite
 libxcrypt
+libxcrypt-compat
 libxcursor
 libxcvt
 libxdamage
@@ -666,6 +671,7 @@ nvidia-utils
 obconf
 obs-studio
 ocl-icd
+onevpl
 oniguruma
 openal
 openbox
@@ -735,17 +741,22 @@ python-cffi
 python-chardet
 python-colorama
 python-cryptography
+python-distlib
+python-filelock
 python-gobject
 python-idna
 python-packaging
 python-pip
+python-platformdirs
 python-ply
 python-protobuf
 python-pycparser
 python-requests
 python-shtab
 python-termcolor
+python-typing_extensions
 python-urllib3
+python-virtualenv
 python-wheel
 qemu-audio-alsa
 qemu-audio-dbus
@@ -862,6 +873,7 @@ tar
 tcpdump
 tdb
 telegram-desktop
+terraform
 texinfo
 tint2
 tldr
@@ -928,6 +940,7 @@ xcb-util-wm
 xcb-util-xrm
 xclip
 xdg-dbus-proxy
+xdg-user-dirs
 xdg-utils
 xf86-input-libinput
 xkeyboard-config
@@ -937,6 +950,7 @@ xorg-server-common
 xorg-setxkbmap
 xorg-xauth
 xorg-xdpyinfo
+xorg-xev
 xorg-xkbcomp
 xorg-xprop
 xorg-xrandr
