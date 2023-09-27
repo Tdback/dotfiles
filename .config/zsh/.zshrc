@@ -6,7 +6,6 @@ PS1="
 %{$fg[blue]%}%~ %{$fg[yellow]%}$%{$reset_color%} "
 
 set -o noclobber            # enable noclobber to prevent overwriting w/ redirection
-setopt autocd               # auto cd into typed directory
 setopt interactive_comments # enable comments in commands (similar to bash default)
 setopt incappendhistory     # append each command to history `before' it is run
 
