@@ -1,20 +1,20 @@
 font:
   normal:
-    family: TerminessNerdFontMono
+    family: FantasqueSansMNerdFont
     style: Regular
 
   bold:
-    family: TerminessNerdFontMono
+    family: FantasqueSansMNerdFont
     style: Bold
 
   italic:
-    family: TerminessNerdFontMono
+    family: FantasqueSansMNerdFont
     style: Italic
 
   bold_italic:
-    family: TerminessNerdFontMono
+    family: FantasqueSansMNerdFont
     style: Bold Italic
 
-  size: 20.5
+  size: 18.0
 
 draw_bold_text_with_bright_colors: true
