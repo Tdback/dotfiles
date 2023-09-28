@@ -41,10 +41,6 @@ alias \
 
 # Shortcuts for typing longer commands
 alias \
-    ll="lsd -alF" \
-    l1="lsd -1F" \
-    la="lsd -AF" \
-    l="lsd -F" \
     e="$EDITOR" \
     se="sudo $EDITOR" \
     ez="$EDITOR ~/.dotfiles/.config/zsh/.zshrc" \
@@ -54,7 +50,6 @@ alias \
     pwd="pwd -P" \
     rbn="shutdown -r now" \
     sdn="shutdown -h now" \
-    cl="clear" \
     sourcez="source ~/.dotfiles/.config/zsh/.zshrc" \
     tn="tmux start-server \; new" \
     ta="tmux attach" \
