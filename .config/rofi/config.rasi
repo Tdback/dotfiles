@@ -2,7 +2,7 @@ configuration {
   display-drun: "Apps:";
   display-window: "Windows:";
   drun-display-format: "{icon} {name}";
-  font: "FantasqueSansMNerdFont 14";
+  font: "FantasqueSansMNerdFont 11";
   modi: "window,run,drun";
   show-icons: true;
   icon-theme: "Papirus";
@@ -45,7 +45,7 @@ element-text {
 }
 
 element-icon {
-  size: 40;
+  size: 38;
 }
 
 entry {
@@ -60,7 +60,7 @@ inputbar {
 
 listview {
   background-color: @bg;
-  columns: 2;
+  columns: 3;
   lines: 6;
 }
 
