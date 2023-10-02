@@ -13,7 +13,7 @@ window:
     x: 5
     y: 5
 
-  decorations: Full
+  decorations: None
 
   opacity: 1.0
 
