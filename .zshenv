@@ -1,7 +1,7 @@
 # Default apps
 export EDITOR="nvim"
 export TERMINAL="alacritty"
-export BROWSER="firefox"
+export BROWSER="brave"
 
 # Cleaning up home folder
 export XDG_CONFIG_HOME="$HOME/.config"
