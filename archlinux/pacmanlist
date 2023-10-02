@@ -141,6 +141,7 @@ glib-networking
 glib2
 glibc
 glibmm
+glibmm-2.68
 glslang
 glu
 gmp
@@ -625,7 +626,6 @@ man-db
 man-pages
 mbedtls
 md4c
-menumaker
 mesa
 miniupnpc
 minizip
@@ -668,13 +668,11 @@ nuspell
 nvidia
 nvidia-settings
 nvidia-utils
-obconf
 obs-studio
 ocl-icd
 onevpl
 oniguruma
 openal
-openbox
 opencore-amr
 openexr
 openjpeg2
@@ -752,6 +750,7 @@ python-ply
 python-protobuf
 python-pycparser
 python-requests
+python-scapy
 python-shtab
 python-termcolor
 python-typing_extensions
@@ -826,6 +825,7 @@ rubberband
 runc
 sbc
 sbcl
+scapy
 sddm
 sdl12-compat
 sdl2
@@ -875,7 +875,6 @@ tdb
 telegram-desktop
 terraform
 texinfo
-tint2
 tldr
 tmux
 tpm2-tss
