@@ -16,7 +16,7 @@ super + x
 
 # Browser
 super + b
-        firefox
+        brave
 
 # Messaging
 super + m
