@@ -152,6 +152,7 @@ gnutls
 gobject-introspection-runtime
 gperftools
 gpgme
+gping
 gpm
 graphene
 graphite
@@ -218,7 +219,7 @@ json-glib
 jsoncpp
 kbd
 keyutils
-kguiaddons
+kguiaddons5
 kmod
 krb5
 l-smash
@@ -681,6 +682,7 @@ openpmix
 openssh
 openssl
 openssl-1.1
+openvpn
 opus
 opusfile
 orc
@@ -715,6 +717,7 @@ phodav
 pinentry
 pipewire
 pixman
+pkcs11-helper
 pkgconf
 playerctl
 podman
