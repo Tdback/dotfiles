@@ -35,9 +35,9 @@ blas
 bluez-libs
 boost-libs
 bore
-bridge-utils
 brotli
 bspwm
+btrfs-progs
 bubblewrap
 bzip2
 c-ares
@@ -55,7 +55,6 @@ clang
 cmake
 compiler-rt
 conmon
-containerd
 containers-common
 coreutils
 cowsay
@@ -79,8 +78,6 @@ diffutils
 dmidecode
 dnsmasq
 dnssec-anchors
-docker
-docker-compose
 dolphin-emu
 double-conversion
 dtc
@@ -825,7 +822,6 @@ rofi
 rsync
 rtkit
 rubberband
-runc
 sbc
 sbcl
 scapy
@@ -873,6 +869,7 @@ systemd-libs
 systemd-sysvcompat
 taglib
 tar
+tcl
 tcpdump
 tdb
 telegram-desktop
