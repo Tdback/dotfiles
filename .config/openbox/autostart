@@ -1,6 +1,0 @@
-setxkbmap -layout us
-xsetroot -cursor_name left_ptr
-xset r rate 350 40
-tint2 &
-bash ~/.config/polybar/launch.sh &
-~/.fehbg &
