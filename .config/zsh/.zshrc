@@ -27,10 +27,12 @@ autoload -Uz compinit && compinit
 [ -f "${XDG_CONFIG_HOME}/zsh/aliases" ] && . "${XDG_CONFIG_HOME}/zsh/aliases"
 
 # Source syntax highlighting
-[ -d "${XDG_CONFIG_HOME}/zsh/zsh-syntax-highlighting" ] && . "${XDG_CONFIG_HOME}/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+[ -d "${XDG_CONFIG_HOME}/zsh/zsh-syntax-highlighting" ] && \
+    . "${XDG_CONFIG_HOME}/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 # Source history substring
-[ -d "${XDG_CONFIG_HOME}/zsh/zsh-history-substring-search" ] && . "${XDG_CONFIG_HOME}/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh"
+[ -d "${XDG_CONFIG_HOME}/zsh/zsh-history-substring-search" ] && \
+    . "${XDG_CONFIG_HOME}/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh"
 
 # History searching with arrows in `insert' mode
 bindkey '^[[A' history-substring-search-up

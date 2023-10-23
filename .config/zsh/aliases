@@ -51,8 +51,6 @@ alias \
     rbn="shutdown -r now" \
     sdn="shutdown -h now" \
     sourcez="source ~/.dotfiles/.config/zsh/.zshrc" \
-    tn="tmux start-server \; new" \
-    ta="tmux attach" \
     wormhole="~/.local/share/virtualenv/venv/bin/wormhole"
 
 # Git shortcuts
