@@ -23,13 +23,6 @@
       loop: "{{ links }}"
       tags: link
 
-    - name: Install missing packages
-      become: true
-      ansible.builtin.package:
-        name: "{{ packages }}"
-        state: present
-      tags: packages
-
     - name: Check to see if yay is already installed
       ansible.builtin.stat:
         path: /usr/bin/yay
@@ -61,6 +54,13 @@
       when: yay_installed.stat.exists == false
       tags: yay
 
+    - name: Install missing packages
+      become: true
+      ansible.builtin.package:
+        name: "{{ packages }}"
+        state: present
+      tags: packages
+
     - name: Set default shell to zsh
       become: true
       ansible.builtin.shell:
@@ -82,3 +82,6 @@
         depth: "{{ packer.depth }}"
       tags: neovim
 
+    # Add font installation for FantasqueSansMono
+    #
+    # Add installation for one true awk!
