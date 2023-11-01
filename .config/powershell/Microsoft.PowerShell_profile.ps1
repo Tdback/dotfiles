@@ -17,20 +17,14 @@
 #>
 
 # Helpful functions
-function Get-ProcName {
+function Get-CmdletAlias {
     param (
-        [String]$Name
+        [String]$CmdletName
     )
 
-    Get-Process | Where-Object { $_.Name -like "*$Name*" }
-}
-
-function Stop-ProcName {
-    param (
-        [String]$Name
-    )
-
-    Stop-Process -Id (Get-Process | Where-Object { $_.Name -like "*$Name*" }).Id
+    Get-Alias |
+        Where-Object -FilterScript { $_.Definition -like "$CmdletName" } |
+            Format-Table -Property Definition, Name -AutoSize
 }
 
 # Aliases
