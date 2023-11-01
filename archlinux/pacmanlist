@@ -37,6 +37,7 @@ blas
 bluez-libs
 boost-libs
 bore
+botan
 brotli
 bspwm
 btrfs-progs
@@ -51,6 +52,7 @@ cairomm
 cantarell-fonts
 capstone
 catatonit
+cblas
 cdparanoia
 chromaprint
 clang
@@ -223,6 +225,7 @@ jupyter-server
 jupyterlab
 jupyterlab-pygments
 kbd
+keepassxc
 keyutils
 kguiaddons5
 kmod
@@ -740,6 +743,7 @@ pugixml
 pulseaudio
 pulseaudio-alsa
 python
+python-annotated-types
 python-anyio
 python-argcomplete
 python-argon2-cffi-bindings
@@ -747,6 +751,7 @@ python-argon2_cffi
 python-asttokens
 python-async-lru
 python-attrs
+python-autocommand
 python-babel
 python-backcall
 python-bcrypt
@@ -770,7 +775,11 @@ python-filelock
 python-gobject
 python-idna
 python-importlib-metadata
+python-inflect
 python-ipykernel
+python-jaraco.context
+python-jaraco.functools
+python-jaraco.text
 python-jedi
 python-jinja
 python-json-logger
@@ -786,9 +795,13 @@ python-markupsafe
 python-matplotlib-inline
 python-mdurl
 python-mistune
+python-more-itertools
 python-nest-asyncio
+python-numpy
+python-ordered-set
 python-overrides
 python-packaging
+python-pandas
 python-pandocfilters
 python-paramiko
 python-parso
@@ -804,6 +817,8 @@ python-psutil
 python-ptyprocess
 python-pure-eval
 python-pycparser
+python-pydantic
+python-pydantic-core
 python-pygments
 python-pynacl
 python-pyrsistent
@@ -818,6 +833,7 @@ python-ruamel-yaml
 python-ruamel.yaml.clib
 python-scapy
 python-send2trash
+python-setuptools
 python-shtab
 python-six
 python-sniffio
@@ -826,11 +842,14 @@ python-stack-data
 python-termcolor
 python-testpath
 python-tinycss2
+python-tomli
 python-tornado
 python-traitlets
+python-trove-classifiers
 python-typing_extensions
 python-uc-micro-py
 python-urllib3
+python-validate-pyproject
 python-virtualenv
 python-wcwidth
 python-webencodings
@@ -879,6 +898,7 @@ qemu-ui-sdl
 qemu-ui-spice-app
 qemu-ui-spice-core
 qemu-vhost-user-gpu
+qrencode
 qt5-base
 qt5-declarative
 qt5-multimedia
