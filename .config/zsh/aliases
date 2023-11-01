@@ -41,10 +41,10 @@ alias \
 
 # Shortcuts for typing longer commands
 alias \
-    e="$EDITOR" \
-    se="sudo $EDITOR" \
-    ez="$EDITOR ~/.dotfiles/.config/zsh/.zshrc" \
-    ea="$EDITOR ~/.dotfiles/.config/zsh/aliases" \
+    vi="$EDITOR" \
+    svi="sudo $EDITOR" \
+    viz="$EDITOR ~/.dotfiles/.config/zsh/.zshrc" \
+    via="$EDITOR ~/.dotfiles/.config/zsh/aliases" \
     z="zathura" \
     bd='cd "$OLDPWD"' \
     pwd="pwd -P" \
