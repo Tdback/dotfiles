@@ -12,6 +12,7 @@ paths:
   - "/home/{{ username }}/.config/mpd/"
   - "/home/{{ username }}/.config/ncmpcpp/"
   - "/home/{{ username }}/.config/polybar/"
+  - "/home/{{ username }}/.config/powershell/"
   - "/home/{{ username }}/.config/rofi/"
   - "/home/{{ username }}/.config/sxhkd/"
   - "/home/{{ username }}/.config/tmux/"
@@ -56,6 +57,9 @@ links:
     dest: "/home/{{ username }}/.config/polybar/config.ini"
   - src: "/home/{{ username }}/.dotfiles/.config/polybar/launch.sh"
     dest: "/home/{{ username }}/.config/polybar/launch.sh"
+
+  - src: "/home/{{ username }}/.dotfiles/.config/powershell/Microsoft.PowerShell_profile.ps1"
+    dest: "/home/{{ username }}/.config/powershell/Microsoft.PowerShell_profile.ps1"
 
   - src: "/home/{{ username }}/.dotfiles/.config/rofi/config.rasi"
     dest: "/home/{{ username }}/.config/rofi/config.rasi"
