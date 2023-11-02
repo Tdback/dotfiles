@@ -27,6 +27,14 @@ function Get-CmdletAlias {
             Format-Table -Property Definition, Name -AutoSize
 }
 
+function Get-IP {
+    param ()
+
+    ((ip addr |
+        Select-String -Pattern "^\s+inet\s+1[^2][^7]*" |
+            Out-String -NoNewline).TrimStart() -split " ")[1] -replace "/\d+"
+}
+
 # Aliases
 Set-Alias -Name "vi" -Value "/usr/bin/nvim"
 
