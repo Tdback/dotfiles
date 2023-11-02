@@ -35,6 +35,13 @@ function Get-IP {
             Out-String -NoNewline).TrimStart() -split " ")[1] -replace "/\d+"
 }
 
+function Set-PreviousLocation {
+    param ()
+
+    Set-Location -Path $env:OLDPWD
+}
+
 # Aliases
 Set-Alias -Name "vi" -Value "/usr/bin/nvim"
 
+Set-Alias -Name "bd" -Value Set-PreviousLocation
