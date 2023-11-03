@@ -30,9 +30,16 @@ function Get-CmdletAlias {
 function Get-IP {
     param ()
 
-    ((ip addr |
-        Select-String -Pattern "^\s+inet\s+1[^2][^7]*" |
-            Out-String -NoNewline).TrimStart() -split " ")[1] -replace "/\d+"
+    if ($IsLinux -or $IsMacOS) {
+        ((ifconfig |
+            Select-String -Pattern "^\s+inet\s+1[^2][^7].*" |
+                Out-String -NoNewline).TrimStart() -split " ")[1] -replace "/\d+"
+        return
+    }
+
+    (((ipconfig.exe |
+        Select-String -Pattern "^\s+IPv4.*" |
+            Out-String -NoNewline).TrimStart() -split ":")[1]).Trim()
 }
 
 function Set-PreviousLocation {
