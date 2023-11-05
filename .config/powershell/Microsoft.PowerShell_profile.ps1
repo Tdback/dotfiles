@@ -17,7 +17,7 @@
 #>
 
 function prompt {
-    "$env:USER @ $([System.Net.Dns]::GetHostName()) in $env:PWD`n$('>' * ($NestedPromptLevel + 1)) "
+    "`n$env:USER @ $([System.Net.Dns]::GetHostName()) in $env:PWD`n$('>' * ($NestedPromptLevel + 1)) "
 }
 
 # Helpful functions
