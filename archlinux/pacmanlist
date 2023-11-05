@@ -478,6 +478,7 @@ libmpc
 libmpcdec
 libmpdclient
 libmypaint
+libnbd
 libndp
 libnet
 libnetfilter_conntrack
@@ -753,7 +754,6 @@ python-async-lru
 python-attrs
 python-autocommand
 python-babel
-python-backcall
 python-bcrypt
 python-beautifulsoup4
 python-bleach
@@ -970,7 +970,6 @@ systemd-libs
 systemd-sysvcompat
 taglib
 tar
-tcl
 tcpdump
 tdb
 telegram-desktop

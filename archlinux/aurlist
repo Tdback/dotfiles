@@ -3,5 +3,6 @@ dcron
 gotop-bin
 minecraft-launcher
 powershell-bin
+python-backcall
 shellcheck-bin
 yay
