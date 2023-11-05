@@ -16,10 +16,6 @@
     GitHub Repo: https://github.com/Tdback/dotfiles
 #>
 
-function prompt {
-    "`n$env:USER @ $([System.Net.Dns]::GetHostName()) in $env:PWD`n$('>' * ($NestedPromptLevel + 1)) "
-}
-
 # Helpful functions
 function Get-CmdletAlias {
     param (
