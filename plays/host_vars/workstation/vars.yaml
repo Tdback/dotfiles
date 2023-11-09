@@ -8,6 +8,7 @@ paths:
   - "/home/{{ username }}/.config/autostart/"
   - "/home/{{ username }}/.config/bspwm/"
   - "/home/{{ username }}/.config/gtk-3.0/"
+  - "/home/{{ username }}/.config/kitty/"
   - "/home/{{ username }}/.config/lf/"
   - "/home/{{ username }}/.config/mpd/"
   - "/home/{{ username }}/.config/ncmpcpp/"
@@ -36,6 +37,9 @@ links:
 
   - src: "/home/{{ username }}/.dotfiles/.config/gtk-3.0/settings.ini"
     dest: "/home/{{ username }}/.config/gtk-3.0/settings.ini"
+
+  - src: "/home/{{ username }}/.dotfiles/.config/kitty/kitty.conf"
+    dest: "/home/{{ username }}/.config/kitty/kitty.conf"
 
   - src: "/home/{{ username }}/.dotfiles/.config/lf/icons"
     dest: "/home/{{ username }}/.config/lf/icons"
