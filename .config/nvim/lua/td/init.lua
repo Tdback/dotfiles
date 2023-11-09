@@ -35,7 +35,7 @@ autocmd({ "BufRead", "BufNewFile" }, {
 autocmd({ "BufRead", "BufNewFile" }, {
     group = column_group,
     pattern = { "*.ps1" },
-    command = "set colorcolumn=115",
+    command = "setlocal colorcolumn=115",
 })
 
 -- minimal netrw
