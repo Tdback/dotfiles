@@ -12,7 +12,7 @@ super + e
 
 # Alacritty
 super + x
-        alacritty
+        kitty
 
 # Browser
 super + b
