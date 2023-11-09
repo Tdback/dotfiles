@@ -4,17 +4,17 @@ require("td.remap")
 local augroup = vim.api.nvim_create_augroup
 local autocmd = vim.api.nvim_create_autocmd
 
-local TdGroup = augroup('td', {})
-local yank_group = augroup('HighlightYank', {})
-local spell_group = augroup('Spellcheck', {})
+local TdGroup = augroup("td", {})
+local yank_group = augroup("HighlightYank", {})
+local spell_group = augroup("Spellcheck", {})
+local column_group = augroup("Column", {})
 
-
-autocmd('TextYankPost', {
+autocmd("TextYankPost", {
     group = yank_group,
     pattern = '*',
     callback = function()
         vim.highlight.on_yank({
-            higroup = 'IncSearch',
+            higroup = "IncSearch",
             timeout = 40,
         })
     end,
@@ -30,6 +30,12 @@ autocmd({ "BufRead", "BufNewFile" }, {
     group = spell_group,
     pattern = { "*.md", "*.txt" },
     command = "setlocal spell",
+})
+
+autocmd({ "BufRead", "BufNewFile" }, {
+    group = column_group,
+    pattern = { "*.ps1" },
+    command = "set colorcolumn=115",
 })
 
 -- minimal netrw
