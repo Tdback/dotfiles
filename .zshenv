@@ -1,6 +1,6 @@
 # Default apps
 export EDITOR="nvim"
-export TERMINAL="alacritty"
+export TERMINAL="kitty"
 export BROWSER="brave"
 
 # Cleaning up home folder
