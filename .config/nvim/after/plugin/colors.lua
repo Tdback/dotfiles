@@ -1,3 +1,14 @@
+-- Fix italics in colorscheme
+require("gruvbox").setup({
+    italic = {
+        strings = false,
+        emphasis = false,
+        comments = true,
+        operators = false,
+        folds = false
+    }
+})
+
 function ColorMyVim(color)
     color = color or "gruvbox"
     vim.cmd.colorscheme(color)
