@@ -1,10 +1,9 @@
 <#
     .SYNOPSIS
-    A collection of aliases and functions to preload into any PowerShell
-    session.
+    A collection of aliases and functions to preload into any PowerShell session.
 
     .DESCRIPTION
-    User profile for using PowerShell on Linux.
+    User profile for using PowerShell Core on Linux or MacOS, with some capatibility for Windows.
 
     .NOTES
     @author   : Tyler Dunneback (tylerdback@pm.me)
