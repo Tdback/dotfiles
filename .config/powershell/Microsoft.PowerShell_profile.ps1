@@ -10,16 +10,34 @@
     @author   : Tyler Dunneback (tylerdback@pm.me)
     @file     : Microsoft.PowerShell_profile.ps1
     @created  : Tue Oct 31 09:44:24 PM EDT 2023
-    @modified : Wed Nov  1 05:52:18 PM EDT 2023
 
     .LINK
     GitHub Repo: https://github.com/Tdback/dotfiles
 #>
 
-# Helpful functions
+# Shortened the name
+Set-Alias -Name "vi" -Value "/usr/bin/nvim"
+
+# Use PowerShell's sleep cmdlet instead of Linux's sleep utility for more options
+Set-Alias -Name "sleep" -Value Start-Sleep
+
+# Quickly edit and update PowerShell profile
+function Edit-Profile { vi ~/.config/powershell/Microsoft.PowerShell_profile.ps1 }
+
+function Update-Profile {
+    [CmdletBinding()]
+    param ()
+
+    . $profile.CurrentUserCurrentHost
+    Write-Verbose "Updated PowerShell profile for user $($env:USER)"
+}
+
+Set-Alias -Name "edp" -Value Edit-Profile
+Set-Alias -Name "udp" -Value Update-Profile
+
 function Get-CmdletAlias {
     param (
-        [String]$CmdletName
+        [string]$CmdletName
     )
 
     Get-Alias |
@@ -42,13 +60,12 @@ function Get-IP {
             Out-String -NoNewline).TrimStart() -split ":")[1]).Trim()
 }
 
-function Set-PreviousLocation {
-    param ()
+function Get-Count {
+    param (
+        [string]$Cmd
+    )
 
-    Set-Location -Path $env:OLDPWD
+    # Call me with care...
+    (Invoke-Expression $Cmd | Measure-Object).Count
 }
 
-# Aliases
-Set-Alias -Name "vi" -Value "/usr/bin/nvim"
-
-Set-Alias -Name "bd" -Value Set-PreviousLocation
