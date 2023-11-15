@@ -1,9 +1,9 @@
 <#
     .SYNOPSIS
-    A collection of aliases and functions to preload into any PowerShell session.
+    Custom settings to preload into every PowerShell session.
 
     .DESCRIPTION
-    User profile for using PowerShell Core on Linux or MacOS, with some capatibility for Windows.
+    User profile for PowerShell Core on Linux or MacOS, with some capatibility for Windows.
 
     .NOTES
     @author   : Tyler Dunneback (tylerdback@pm.me)
@@ -47,16 +47,16 @@ function Get-CmdletAlias {
 function Get-IP {
     param ()
 
-    if ($IsLinux -or $IsMacOS) {
-        (((ifconfig |
-            Select-String -Pattern "^\s+inet\s+1[^2][^7].*" |
-                Out-String -NoNewline).TrimStart() -split " ")[1]).Trim()
+    if ($IsWindows) {
+        (((ipconfig.exe |
+            Select-String -Pattern "^\s+IPv4.*" |
+               Out-String -NoNewline).TrimStart() -split ":")[1]).Trim()
         return
     }
 
-    (((ipconfig.exe |
-        Select-String -Pattern "^\s+IPv4.*" |
-            Out-String -NoNewline).TrimStart() -split ":")[1]).Trim()
+    (((ifconfig |
+        Select-String -Pattern "^\s+inet\s+1[^2][^7].*" |
+            Out-String -NoNewline).TrimStart() -split " ")[1]).Trim()
 }
 
 function Get-Count {
