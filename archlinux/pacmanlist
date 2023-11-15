@@ -212,7 +212,6 @@ jbigkit
 jemalloc
 jq
 jre-openjdk
-jre-openjdk-headless
 json-c
 json-glib
 jsoncpp
@@ -228,6 +227,9 @@ kbd
 keepassxc
 keyutils
 kguiaddons5
+kitty
+kitty-shell-integration
+kitty-terminfo
 kmod
 krb5
 l-smash
@@ -515,6 +517,7 @@ libraqm
 libraw
 libraw1394
 librsvg
+librsync
 librtmp0
 libsamplerate
 libsasl
