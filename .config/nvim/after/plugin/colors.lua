@@ -1,16 +1,5 @@
--- Fix italics in colorscheme
-require("gruvbox").setup({
-    italic = {
-        strings = false,
-        emphasis = false,
-        comments = true,
-        operators = false,
-        folds = false
-    }
-})
-
 function ColorMyVim(color)
-    color = color or "gruvbox"
+    color = color or "komau"
     vim.cmd.colorscheme(color)
 
     vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
