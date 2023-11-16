@@ -1,10 +1,11 @@
-" Name:       komau.vim
-" Version:    0.1.0
-" Maintainer: github.com/ntk148v
-" License:    Apache 2
+"""
+" @author      : Tyler Dunneback (tylerdback@pm.me)
+" @file        : komau.vim
+" @created     : Thu Nov 16 09:56:14 AM EST 2023
 "
-" A minimal colorscheme for Vim/Neovim.
-"
+" @description : Minimal colorscheme for vim/nvim with some modifications made.
+"                Credits to ntk148v for the original vim file
+"                https://github.com/ntk148v/komau.vim
 """
 hi clear
 
