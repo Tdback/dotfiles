@@ -7,12 +7,7 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use('wbthomason/packer.nvim')
 
-    use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.2',
-        -- or                            , branch = '0.1.x',
-        requires = { { 'nvim-lua/plenary.nvim' } }
-    }
-
+    -- Essential plugins
     use('ntk148v/komau.vim')
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-treesitter/playground')
@@ -21,6 +16,14 @@ return require('packer').startup(function(use)
     use('tpope/vim-fugitive')
     use('folke/zen-mode.nvim')
 
+    -- Telescope
+    use {
+        'nvim-telescope/telescope.nvim', tag = '0.1.2',
+        -- or                            , branch = '0.1.x',
+        requires = { { 'nvim-lua/plenary.nvim' } }
+    }
+
+    -- Completion
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
