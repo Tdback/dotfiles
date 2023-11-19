@@ -11,6 +11,13 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
+-- Get help fast
+vim.keymap.set("n", "<leader>hh", ":help<Space>")
+
+-- Insert newlines without "leaving" normal mode
+vim.keymap.set("n", "<leader>o", "o<Esc>")
+vim.keymap.set("n", "<leader>O", "O<Esc>")
+
 -- greatest remap ever (Thanks Primeagen <3)
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
