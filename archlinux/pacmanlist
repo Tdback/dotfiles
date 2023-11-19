@@ -693,7 +693,6 @@ openpmix
 openssh
 openssl
 openssl-1.1
-openvpn
 opus
 opusfile
 orc
@@ -728,7 +727,6 @@ phodav
 pinentry
 pipewire
 pixman
-pkcs11-helper
 pkgconf
 playerctl
 podman
@@ -909,9 +907,12 @@ qt5-svg
 qt5-translations
 qt5-wayland
 qt5-x11extras
+qt6-5compat
 qt6-base
 qt6-declarative
 qt6-imageformats
+qt6-multimedia
+qt6-multimedia-ffmpeg
 qt6-svg
 qt6-translations
 qt6-wayland
@@ -990,6 +991,7 @@ ttf-font-awesome
 ttf-liberation
 ttf-opensans
 twolame
+typst
 tzdata
 uchardet
 ufw
