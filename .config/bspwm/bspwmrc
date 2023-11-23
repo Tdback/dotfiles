@@ -50,6 +50,7 @@ bspc config presel_feedback_color "$color1"
 
 # Application rules
 bspc rule -a Zathura state=tiled
+bspc rule -a Emacs state=tiled
 
 # Set desktop background
 sleep 0.50

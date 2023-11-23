@@ -11,3 +11,8 @@
 # Set key-repetition rate
 xset r rate 350 40
 
+# Always ensure Emacs daemon is running when bspwm is [re]started
+if [ ! $(pgrep -f "emacs --daemon") ]
+then
+    emacs --daemon
+fi
