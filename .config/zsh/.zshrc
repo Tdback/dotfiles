@@ -4,7 +4,7 @@ autoload -U colors && colors
 # Customize my prompt by manipulating the PS1 environment variable
 PS1="
 %{$fg[blue]%}%n %{$fg[yellow]%}@ %{$fg[blue]%}%m %{$fg[yellow]%}in %{$fg[blue]%}%~
-%{$fg[yellow]%}$%{$reset_color%} "
+%{$fg[yellow]%}λ%{$reset_color%} "
 
 set -o noclobber            # enable noclobber to prevent overwriting w/ redirection
 setopt interactive_comments # enable comments in commands (similar to bash default)
