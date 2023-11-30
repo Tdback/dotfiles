@@ -535,6 +535,7 @@ libsoup
 libsoup3
 libsoxr
 libspiro
+libspng
 libssh
 libssh2
 libstemmer
@@ -552,6 +553,7 @@ libtool
 libtraceevent
 libtracefs
 libudev0-shim
+libunibreak
 libunistring
 libunwind
 libupnp
@@ -637,6 +639,7 @@ make
 man-db
 man-pages
 mbedtls
+mbedtls2
 md4c
 mesa
 miniupnpc
